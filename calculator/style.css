@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    background-color: #4c8bc8;
+    -webkit-tap-highlight-color: transparent;
+    overflow-y: hidden;
+  }
+  
+  .calculator {
+    display: inline-block;
+    border: 1px solid #97bddc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eaf5fe;
+  }
+  
+  #display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #cce5ff;
+    border-radius: 8px;
+    padding: 5px;
+    word-wrap: break-word;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+  }
+  
+  #display .orphaned-operator,
+  #display .calculation {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    color: #163d5e;
+  }
+  
+  #display .orphaned-operator {
+    color: #4f8bc6;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  
+  #display .calculation {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  button:focus:active {
+    box-shadow: 2px 2px 10px 0 #1a3e60;
+  }
+  
+  button.enter {
+    width: 100%;
+    color: #e2effc;
+    background-color: #4c8bc8;
+  }
+  
+  button[data-value]:is(
+      [data-value="0"],
+      [data-value="1"],
+      [data-value="2"],
+      [data-value="3"],
+      [data-value="4"],
+      [data-value="5"],
+      [data-value="6"],
+      [data-value="7"],
+      [data-value="8"],
+      [data-value="9"]
+    ) {
+    color: #1a3e60;
+    background-color: #cce5ff;
+    font-weight: 600;
+  }
+  
+  #ans,
+  button[data-value]:is(
+      [data-value="("],
+      [data-value=")"],
+      [data-value="+"],
+      [data-value="-"],
+      [data-value="x"],
+      [data-value="del"],
+      [data-value="±"],
+      [data-value="clear"],
+      [data-value="."],
+      [data-value="%"],
+      [data-value="√"],
+      [data-value="÷"]
+    ) {
+    color: #4d88c7;
+    background-color: #a2d0fa;
+    font-weight: 500;
+  }
+  

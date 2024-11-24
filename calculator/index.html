@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div type="text" id="display">
+            <span class="orphaned-operator">0</span>
+            <span class="calculation">0</span>
+        </div>
+        <table>
+            <tr>
+                <td><button data-value="(">(</button></td>
+                <td><button data-value=")">)</button></td>
+                <td><button id="ans" data-value="">ans</button></td>
+                <td><button data-value="del">del</button></td>
+                <td><button data-value="clear">clear</button></td>
+            </tr>
+            <tr>
+                <td><button data-value="7">7</button></td>
+                <td><button data-value="8">8</button></td>
+                <td><button data-value="9">9</button></td>
+                <td><button data-value="%">%</button></td>
+                <td><button data-value="√">√</button></td>
+            </tr>
+            <tr>
+                <td><button data-value="4">4</button></td>
+                <td><button data-value="5">5</button></td>
+                <td><button data-value="6">6</button></td>
+                <td><button data-value="x">x</button></td>
+                <td><button data-value="÷">÷</button></td>
+            </tr>
+            <tr>
+                <td><button data-value="1">1</button></td>
+                <td><button data-value="2">2</button></td>
+                <td><button data-value="3">3</button></td>
+                <td><button data-value="+">+</button></td>
+                <td><button data-value="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button data-value=".">.</button></td>
+                <td><button data-value="0">0</button></td>
+                <td><button data-value="±">±</button></td>
+                <td colspan="2"><button data-value="ENTER" class="enter">ENTER</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
